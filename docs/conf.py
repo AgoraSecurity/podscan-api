@@ -4,8 +4,8 @@ import sys
 sys.path.insert(0, os.path.abspath(".."))
 
 project = "Podscan API Client"
-copyright = "2023, AgoraBots"
-author = "Agora Bots"
+copyright = "2024, AgoraSecurity"
+author = "AgoraSecurity"
 
 extensions = [
     "sphinx.ext.autodoc",

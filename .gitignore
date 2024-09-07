@@ -4,3 +4,4 @@ docs/_build/
 *.pyo
 .env
 podscan_api.egg-info/
+dist/
