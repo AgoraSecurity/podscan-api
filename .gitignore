@@ -2,3 +2,5 @@ docs/_build/
 .venv/
 *.pyc
 *.pyo
+.env
+podscan_api.egg-info/
