@@ -11,16 +11,16 @@ repos:
     rev: 24.2.0
     hooks:
     -   id: black
-- repo: https://github.com/PyCQA/flake8
-  rev: 7.0.0
-  hooks:
-  -   id: flake8
-      name: flake8
-      types: [python]
-      args:
-      -   --ignore=E501,E121,E123,E126,E226,E24,E704,W503,W504
-- repo: https://github.com/pycqa/isort
-  rev: 5.13.2
-  hooks:
-    - id: isort
-      name: isort (python)
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8
+        args:
+        # E203 and W503 are incompatible with Black
+        -   --ignore=E203,W503
+        -   --max-line-length=130
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        args: ["--profile", "black"]
